@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/signup.html");
-  console.log(process.env.MAILCHIMP_LISTID);
 });
 
 app.post("/", function (req, res) {
